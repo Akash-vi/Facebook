@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-15T05:34:49Z" name="Default suite" finished-at="2023-02-15T05:34:54Z" duration-ms="4951">
+    <groups>
+    </groups>
+    <test started-at="2023-02-15T05:34:49Z" name="Default test" finished-at="2023-02-15T05:34:54Z" duration-ms="4951">
+      <class name="TestNGClasses.LoginPageTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestNGClasses.LoginPageTest@79e4c792]" started-at="2023-02-15T05:34:49Z" name="beforeClass" finished-at="2023-02-15T05:34:51Z" duration-ms="2437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestNGClasses.LoginPageTest@79e4c792]" started-at="2023-02-15T05:34:51Z" name="beforeMethod" finished-at="2023-02-15T05:34:53Z" duration-ms="1111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="title()[pri:1, instance:TestNGClasses.LoginPageTest@79e4c792]" started-at="2023-02-15T05:34:53Z" name="title" finished-at="2023-02-15T05:34:54Z" duration-ms="1033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- title -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNGClasses.LoginPageTest@79e4c792]" started-at="2023-02-15T05:34:54Z" name="afterMethod" finished-at="2023-02-15T05:34:54Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestNGClasses.LoginPageTest@79e4c792]" started-at="2023-02-15T05:34:54Z" name="afterClass" finished-at="2023-02-15T05:34:54Z" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestNGClasses.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

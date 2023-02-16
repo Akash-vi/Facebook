@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Default suite]]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="param-val-not-found"/>
+  <test thread-count="5" name="Default test(failed)(failed)">
+    <classes>
+      <class name="TestNGSuites.ForgetPageSuiteTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="username"/>
+          <include name="webPageTitle"/>
+          <include name="isEnabledSearchButton"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="clickOnCancelButton"/>
+          <include name="beforeMethod"/>
+          <include name="clickOnSearchButton"/>
+          <include name="tagName"/>
+          <include name="isEnabledCancelButton"/>
+          <include name="beforeClass"/>
+          <include name="SearchButtonTag"/>
+          <include name="afterMethod"/>
+          <include name="title"/>
+          <include name="userNameTag"/>
+          <include name="webPageURl"/>
+        </methods>
+      </class> <!-- TestNGSuites.ForgetPageSuiteTest -->
+    </classes>
+  </test> <!-- Default test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default suite]] -->

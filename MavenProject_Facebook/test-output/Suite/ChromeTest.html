@@ -1,0 +1,855 @@
+<html>
+<head>
+<title>TestNG:  ChromeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ChromeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/18</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Feb 12 21:14:43 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7239 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1064710120", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1064710120'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>1</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace709952587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace709952587'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>2</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.beforeMethod()'><b>beforeMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.afterMethod()'><b>afterMethod</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.afterClass()'><b>afterClass</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.afterClass()'><b>afterClass</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.SearchButtonTag()'><b>SearchButtonTag</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace50201544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace50201544'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.clickOnCancelButton()'><b>clickOnCancelButton</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1996627461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1996627461'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.clickOnSearchButton()'><b>clickOnSearchButton</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1861093999", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1861093999'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.createNewAcct()'><b>createNewAcct</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1040598264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1040598264'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.isEnabledCancelButton()'><b>isEnabledCancelButton</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1364193210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1364193210'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.isEnabledSearchButton()'><b>isEnabledSearchButton</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1576473633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1576473633'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.loginButton()'><b>loginButton</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace777940969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace777940969'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.passwordTab()'><b>passwordTab</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace537682813", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace537682813'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.tagName()'><b>tagName</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace717019736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace717019736'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.tagName()'><b>tagName</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace248166584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace248166584'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.title()'><b>title</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace819841622", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace819841622'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.title()'><b>title</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1763478915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1763478915'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.url()'><b>url</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1793726270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1793726270'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.LoginPageSuiteTest.userNameTab()'><b>userNameTab</b><br>Test class: TestNGSuites.LoginPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace996990612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace996990612'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.LoginOrSignUpPage.&lt;init&gt;(LoginOrSignUpPage.java:33)
+	at TestNGSuites.LoginPageSuiteTest.beforeMethod(LoginPageSuiteTest.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.LoginPageSuiteTest@60704c</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.userNameTag()'><b>userNameTag</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace552952762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace552952762'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.username()'><b>username</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace635777144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace635777144'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.webPageTitle()'><b>webPageTitle</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1995232085", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1995232085'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+<tr>
+<td title='TestNGSuites.ForgetPageSuiteTest.webPageURl()'><b>webPageURl</b><br>Test class: TestNGSuites.ForgetPageSuiteTest</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace213714102", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace213714102'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at PomClasses.ForgetPasswordPage.&lt;init&gt;(ForgetPasswordPage.java:29)
+	at TestNGSuites.ForgetPageSuiteTest.beforeMethod(ForgetPageSuiteTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestNGSuites.ForgetPageSuiteTest@6b19b79</td></tr>
+</table><p>
+</body>
+</html>
